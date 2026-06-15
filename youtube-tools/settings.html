@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Tools - Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-content">
+        <img src="icons/icon48.png" alt="" width="40" height="40" class="hero-icon">
+        <div>
+          <h1>YouTube Tools</h1>
+          <p>Customize each focus mode. Changes are saved to Chrome sync storage.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="tabs" id="modeTabs"></div>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2 id="panelTitle">Mode Settings</h2>
+          <p id="panelDescription"></p>
+        </div>
+        <div id="featureGrid" class="feature-grid"></div>
+      </section>
+
+      <div class="actions">
+        <button id="saveBtn" type="button" class="btn primary">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-4-4zm-5 16a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm3-10H5V5h10v4z"/></svg>
+          Save Changes
+        </button>
+        <button id="resetBtn" type="button" class="btn secondary">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5V1L7 6l5 5V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg>
+          Reset Defaults
+        </button>
+      </div>
+
+      <p id="toast" class="toast" hidden></p>
+    </main>
+  </div>
+
+  <script src="defaults.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>

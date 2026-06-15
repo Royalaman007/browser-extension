@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Tools</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <header class="header">
+      <div class="brand">
+        <img src="icons/icon48.png" alt="" class="brand-icon" width="28" height="28">
+        <div>
+          <h1>YouTube Tools</h1>
+          <p class="subtitle">Distraction-free viewing</p>
+        </div>
+      </div>
+      <button id="settingsBtn" class="icon-btn" type="button" title="Settings" aria-label="Open settings">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19.14 12.94c.04-.31.06-.63.06-.94s-.02-.63-.06-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96a7.07 7.07 0 0 0-1.63-.94l-.36-2.54A.49.49 0 0 0 14 2h-4a.49.49 0 0 0-.49.42l-.36 2.54a7.07 7.07 0 0 0-1.63.94l-2.39-.96a.49.49 0 0 0-.59.22L2.71 8.48a.49.49 0 0 0 .12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58a.49.49 0 0 0-.12.61l1.92 3.32a.49.49 0 0 0 .59.22l2.39-.96c.51.4 1.05.72 1.63.94l.36 2.54c.05.28.27.48.49.48h4c.22 0 .44-.2.49-.48l.36-2.54c.58-.22 1.12-.54 1.63-.94l2.39.96a.49.49 0 0 0 .59-.22l1.92-3.32a.49.49 0 0 0-.12-.61l-2.03-1.58zM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5z"/>
+        </svg>
+      </button>
+    </header>
+
+    <section class="card">
+      <div class="row">
+        <div class="row-label">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="row-icon">
+            <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14.5h-2v-2h2v2zm0-4h-2V7h2v5.5z"/>
+          </svg>
+          <span>Extension</span>
+        </div>
+        <label class="toggle">
+          <input id="enabledToggle" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+      <p id="statusText" class="status enabled">Enabled</p>
+    </section>
+
+    <section class="card">
+      <h2>Current Mode</h2>
+      <div class="mode-list" id="modeList">
+        <label class="mode-option">
+          <input type="radio" name="mode" value="noDistraction">
+          <span class="mode-card">
+            <span class="mode-title">No Distraction</span>
+            <span class="mode-desc">Cleaner viewing with Theater Mode</span>
+          </span>
+        </label>
+        <label class="mode-option">
+          <input type="radio" name="mode" value="focus">
+          <span class="mode-card">
+            <span class="mode-title">Focus</span>
+            <span class="mode-desc">Reduce doomscrolling on Home and Shorts</span>
+          </span>
+        </label>
+        <label class="mode-option">
+          <input type="radio" name="mode" value="superFocus">
+          <span class="mode-card">
+            <span class="mode-title">Super Focus</span>
+            <span class="mode-desc">Fully customizable study mode</span>
+          </span>
+        </label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Active Features</h2>
+      <ul id="activeFeatures" class="feature-list"></ul>
+    </section>
+  </div>
+
+  <script src="defaults.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

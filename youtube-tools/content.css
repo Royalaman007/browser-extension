@@ -1,0 +1,102 @@
+/* Theater Mode layout helpers */
+.yt-tools-theater ytd-watch-flexy {
+  --ytd-watch-flexy-sidebar-min-width: 0px;
+}
+
+/* Hide Home Feed */
+.yt-tools-hide-home-feed ytd-browse[page-subtype="home"] #contents,
+.yt-tools-hide-home-feed ytd-browse[page-subtype="home"] ytd-rich-grid-renderer,
+.yt-tools-hide-home-feed ytd-browse[page-subtype="home"] ytd-rich-section-renderer {
+  display: none !important;
+}
+
+.yt-tools-hide-home-feed ytd-browse[page-subtype="home"] #primary::after {
+  content: "Home feed hidden by YouTube Tools";
+  display: block;
+  margin: 48px auto;
+  max-width: 480px;
+  padding: 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #aaa;
+  border: 1px dashed #444;
+  border-radius: 12px;
+}
+
+/* Hide Shorts */
+.yt-tools-hide-shorts ytd-reel-shelf-renderer,
+.yt-tools-hide-shorts ytd-reel-video-renderer,
+.yt-tools-hide-shorts ytd-reel-item-renderer,
+.yt-tools-hide-shorts ytd-shorts,
+.yt-tools-hide-shorts [is-shorts],
+.yt-tools-hide-shorts ytd-mini-guide-entry-renderer a[title="Shorts"],
+.yt-tools-hide-shorts ytd-guide-entry-renderer a[title="Shorts"],
+.yt-tools-hide-shorts ytd-guide-entry-renderer tp-yt-paper-item[href="/shorts/"] {
+  display: none !important;
+}
+
+/* Hide Comments */
+.yt-tools-hide-comments #comments,
+.yt-tools-hide-comments ytd-comments,
+.yt-tools-hide-comments #sections ytd-item-section-renderer:has(#comments) {
+  display: none !important;
+}
+
+/* Hide Recommendations */
+.yt-tools-hide-recommendations ytd-browse[page-subtype="home"] #contents,
+.yt-tools-hide-recommendations ytd-rich-shelf-renderer,
+.yt-tools-hide-recommendations ytd-shelf-renderer,
+.yt-tools-hide-recommendations ytd-rich-grid-renderer,
+.yt-tools-hide-recommendations ytd-rich-section-renderer,
+.yt-tools-hide-recommendations ytd-watch-next-secondary-results-renderer {
+  display: none !important;
+}
+
+/* Hide Related Videos */
+.yt-tools-hide-related #secondary,
+.yt-tools-hide-related #related,
+.yt-tools-hide-related ytd-watch-next-secondary-results-renderer {
+  display: none !important;
+}
+
+/* Hide End Screens */
+.yt-tools-hide-end-screens .ytp-endscreen-content,
+.yt-tools-hide-end-screens .html5-endscreen,
+.yt-tools-hide-end-screens .ytp-ce-element,
+.yt-tools-hide-end-screens .ytp-cards-teaser,
+.yt-tools-hide-end-screens .ytp-cards-button {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Hide Trending / Explore */
+.yt-tools-hide-trending ytd-browse[page-subtype="trending"] #contents,
+.yt-tools-hide-trending ytd-browse[page-subtype="explore"] #contents,
+.yt-tools-hide-trending ytd-browse[page-subtype="gaming"] #contents,
+.yt-tools-hide-trending ytd-browse[page-subtype="news"] #contents,
+.yt-tools-hide-trending ytd-browse[page-subtype="music"] #contents,
+.yt-tools-hide-trending ytd-browse[page-subtype="movies"] #contents,
+.yt-tools-hide-trending ytd-guide-entry-renderer:has(a[href*="/feed/explore"]),
+.yt-tools-hide-trending ytd-guide-entry-renderer:has(a[href*="/feed/trending"]),
+.yt-tools-hide-trending ytd-guide-entry-renderer:has(a[title="Explore"]),
+.yt-tools-hide-trending ytd-guide-entry-renderer:has(a[title="Trending"]),
+.yt-tools-hide-trending ytd-guide-entry-renderer:has(a[aria-label="Explore"]),
+.yt-tools-hide-trending ytd-guide-entry-renderer:has(a[aria-label="Trending"]),
+.yt-tools-hide-trending ytd-mini-guide-entry-renderer:has(a[href*="/feed/explore"]),
+.yt-tools-hide-trending ytd-mini-guide-entry-renderer:has(a[href*="/feed/trending"]),
+.yt-tools-hide-trending ytd-mini-guide-entry-renderer:has(a[title="Explore"]),
+.yt-tools-hide-trending ytd-mini-guide-entry-renderer:has(a[title="Trending"]),
+.yt-tools-hide-trending ytd-mini-guide-entry-renderer:has(a[aria-label="Explore"]),
+.yt-tools-hide-trending ytd-mini-guide-entry-renderer:has(a[aria-label="Trending"]),
+.yt-tools-hide-trending .yt-tools-nav-explore {
+  display: none !important;
+}
+
+/* Hide Notification Count */
+.yt-tools-hide-notifications ytd-notification-topbar-button-renderer .yt-spec-icon-badge-shape__badge,
+.yt-tools-hide-notifications ytd-notification-topbar-button-renderer yt-icon-badge-shape,
+.yt-tools-hide-notifications ytd-notification-topbar-button-renderer .badge-style {
+  display: none !important;
+}
