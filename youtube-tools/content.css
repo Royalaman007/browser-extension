@@ -9,7 +9,7 @@
 .yt-tools-hide-home-feed ytd-browse[page-subtype="home"] ytd-rich-section-renderer {
   display: none !important;
 }
-
+/*
 .yt-tools-hide-home-feed ytd-browse[page-subtype="home"] #primary::after {
   content: "Home feed hidden by YouTube Tools";
   display: block;
@@ -22,7 +22,7 @@
   border: 1px dashed #444;
   border-radius: 12px;
 }
-
+*/
 /* Hide Shorts */
 .yt-tools-hide-shorts ytd-reel-shelf-renderer,
 .yt-tools-hide-shorts ytd-reel-video-renderer,
